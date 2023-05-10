@@ -1,0 +1,16 @@
+<script>
+    const nota1 = Number(prompt(`Informe a sua nota do 1º trimestre`))
+    const nota2 = Number(prompt(`Informe a sua nota do 2º trimestre`))
+    const nota3 = Number(prompt(`Informe a sua nota do 3º trimestre`))
+    const resultado = nota1 + nota2 + nota3 / 3
+
+    if (resultado < 4) {
+        alert(`Você foi reprovado`)
+    }
+    else if (resultado >= 4 || resultado< 6) {
+        alert(`Você está de exame`)
+    }
+    else if (resultado >= 6) {
+        alert(`Você foi aprovado`)
+    }
+</script>

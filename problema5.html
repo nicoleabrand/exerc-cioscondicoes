@@ -1,9 +1,12 @@
 <script>
-    const letra = prompt(`Informe uma letra`).toUpperCase()
-    if (letra=="A" && letra=="E" && letra=="I" && letra=="O" && letra=="U") {
-        alert(`Essa letra é uma vogal`)
+    const letra = prompt(`Informe uma letra`).toUpperCase().trim()
+    
+    if (letra.length(1)){
+    if (letra=="A" || letra=="E" || letra=="I" || letra=="O" || letra=="U") {
+        alert(`A letra ${letra} é uma vogal`)
     }
     else {
         alert(`Essa letra é uma consoante`)
+    }
     }
 </script>

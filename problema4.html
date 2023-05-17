@@ -3,11 +3,8 @@
     const numero2 = Number(prompt(`Informe um número diferente`))
     const numero3 = Number(prompt(`Informe um número diferente dos anteriores`))
 
-    if (isNaN(numero1) == true || isNaN(numero2) == true || isNaN(numero3) == true) {
+    if (!isNaN(numero1) && !isNaN(numero2) && !isNaN(numero3)) {
         alert(`Coloque um número`)
-    }
-
-    else {
         if (numero1 > numero2 && numero1 > numero3) {
             alert(`O número ${numero1} é maior`)
         }
@@ -17,12 +14,11 @@
         else if (numero3 > numero1 && numero3 > numero2) {
             alert(`O número ${numero3} é maior`)
         }
-        else {
-            alert(`Os números são iguais, tente novamente`)
-        }
-        if (isNaN(numero1) == true || isNaN(numero2) == true || isNaN(numero3) == true) {
-            alert(`Coloque um número`)
+        else if (numero1==numero2 || numero1==numero3 || numero2==numero3) {
+            alert(`Informe números diferentes`)
         }
     }
-
+    else {
+        alert(`Um ou mais valores informados não são números`)
+    }
 </script>

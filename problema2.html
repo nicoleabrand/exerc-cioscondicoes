@@ -1,9 +1,19 @@
 <script>
     const idade = Number(prompt(`Informe sua idade`))
-    if (idade >= 16) {
-        alert(`Você está apto a votar`)
+    const eleitor = prompt(`Possui título de eleitor? Responda com s para sim ou n para não`).toLowerCase().trim()
+    if (idade >= 16 && eleitor==="sim") {
+        const eleitor = prompt(`Possui título de eleitor? Responda com s para sim ou n para não`).toLowerCase().trim()
+         if (eleitor=="s"){
+         alert(`Você está apto a votar`)
+         }
+         else {
+            alert(`Você ainda não está apto a votar, faça seu título`)
+         }
+         
     }
-    else {
-        alert(`Você ainda não está apto a votar`)
+    else if (eleitor != "s" && eleitor!= "n") {
+        alert(`Opção inválida, responda com sim ou não`)
     }
+
+    
 </script>
